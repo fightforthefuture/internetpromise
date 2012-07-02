@@ -65,7 +65,7 @@
 		
 		<form action="http://nt.salsalabs.com/save">
 			<input type="hidden" name="organization_KEY" value="501"/>
-			<input type="hidden" name="redirect" value="http://fightforthefuture.org/thanks"> 
+			<input type="hidden" name="redirect" value="http://internetpromise.org/thanks"> 
 			<input type="hidden" name="object" value="supporter"/>
 			<input type="hidden" name="ip" id="signup_ip" />
 			<input type="hidden" name="user_agent" id="user_agent" />
@@ -97,7 +97,18 @@
 	  })();
 
 	</script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+		<script type="application/javascript">
+		    function getip(json){
+	//	      alert(json.ip); // alerts the ip address
+					$('#signup_ip').val(json.ip);
+		    }
+
+		$("#user_agent").val(navigator.userAgent);
+		</script>
+
+		<script type="application/javascript" src="http://fftf-ips.heroku.com/?callback=getip"></script>
 
 	<script src="https://s3.amazonaws.com/fftf.media/img/placeholder.js"></script>
 	<script>
