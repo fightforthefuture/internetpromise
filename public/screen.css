@@ -51,7 +51,7 @@ em {font-style: italic;}
 body {
 	background: #3c261a;
 	margin: 0 auto;
-	font-family: "helvetica neue";
+	font-family: "helvetica neue", arial, sans-seirf;
 	font-size: 12px;
 	line-height: 1.5;
 	color: #fff;
